@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Irika</title>
+
+  <!-- ✅ Local Tailwind CSS -->
+  <link rel="stylesheet" href="output.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Root CSS Variables -->
+  <style>
+    :root {
+      --bg-color: rgb(24, 28, 20);
+      --second-bg-color: rgb(90 92 78 / 26%);
+      --text-color: rgb(236, 223, 204);
+      --main-color: rgb(132 143 128);
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  </style>
+</head>
+
+<body class=" text-[var(--text-color)]">
+
+<!-- ✅ Navbar -->
+<header class="fixed top-0 left-0 w-full px-8 py-8 bg-[var(--second-bg-color)] backdrop-blur-md z-50 flex justify-between items-center">
+  <a href="index.html" class="text-4xl bottom-0.5 font-extrabold text-[var(--text-color)] transition-transform duration-300 hover:scale-110 mt-2 md:mt-4 ml-2 md:ml-6">
+    Irika <span class="bg-clip-text text-transparent bg-gradient-to-r from-[rgba(132,143,128,0.46)] to-[var(--text-color)]">Ishani</span>
+  </a>
+
+  <!-- Mobile Menu Button -->
+  <div class="md:hidden">
+    <button id="menu-btn" class="text-3xl text-[var(--main-color)] focus:outline-none">
+      <i class='bx bx-menu'></i>
+    </button>
+  </div>
+
+  <!-- ✅ Desktop Nav -->
+  <nav id="nav-menu" class="hidden md:flex items-center gap-10">
+    <a href="index.html" class="text-xl font-bold text-[var(--text-color)] hover:text-[var(--main-color)] border-b-2 border-transparent hover:border-[var(--main-color)]">Home</a>
+    <a href="about.html" class="text-xl font-bold text-[var(--text-color)] hover:text-[var(--main-color)] border-b-2 border-transparent hover:border-[var(--main-color)]">About</a>
+    <a href="projects.html" class="text-xl font-bold text-[var(--text-color)] hover:text-[var(--main-color)] border-b-2 border-transparent hover:border-[var(--main-color)]">Projects</a>
+    <a href="services.html" class="text-xl font-bold text-[var(--main-color)] border-b-2 border-[var(--main-color)]">Services</a>
+  </nav>
+
+  <a href="contact.html" class="hidden md:inline-block bg-gradient-to-r from-[rgba(132,143,128,0.46)] to-[var(--text-color)] text-white text-lg px-6 py-2 rounded-full transition-transform duration-300 hover:scale-110">Contact Me</a>
+</header>
+
+<!-- ✅ Mobile Menu -->
+ <div id="mobile-menu" class="hidden fixed top-20 left-0 w-full z-40 flex-col space-y-6 px-8 py-8 bg-[var(--second-bg-color)] backdrop-blur-md md:hidden">
+
+  <a href="index.html" class="block text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition">Home</a>
+  <a href="about.html" class="block text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition">About</a>
+  <a href="projects.html" class="block text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition">Projects</a>
+  <a href="services.html" class="block text-2xl text-[var(--main-color)] font-bold underline underline-offset-4">Services</a>
+  <a href="contact.html" class="block text-xl bg-gradient-to-r from-[rgba(132,143,128,0.46)] to-[var(--text-color)] text-white px-5 py-2 rounded-full transition hover:scale-105">Contact Me</a>
+</div>
+
+ <!-- ✅ Services Section -->
+<section id="services" class="pt-40 pb-18 px-4 md:px-28 lg:px-40">
+  <h2 class="text-6xl sm:text-7xl text-center font-bold mb-15">
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-[var(--main-color)] to-[var(--text-color)]">Services</span>
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-14">
+
+    <!-- Service Box 1 -->
+    <div class="py-11 px-8 max-w-[500px] mx-auto bg-[var(--main-color)] rounded-[3rem] border-[5px] border-transparent shadow-[0_0_8px_var(--main-color)] hover:shadow-[0_0_20px_var(--main-color),_0_0_30px_var(--main-color)] hover:bg-[rgb(99,110,94)] transition duration-500 ease-in-out hover:scale-105 cursor-pointer flex justify-center items-center text-center">
+      <div>
+        <i class="bx bx-bar-chart text-[6rem] text-[var(--bg-color)]"></i>
+        <h4 class="text-4xl font-extrabold text-[var(--bg-color)] mt-8 mb-6">Data Analytics</h4>
+        <p class="text-base font-semibold text-[var(--bg-color)] leading-relaxed">
+          I offer comprehensive data analysis services that transform raw datasets into meaningful business insights. This includes detailed exploratory analysis, identification of key performance trends, and creation of visual reports to help organizations make data-driven decisions with confidence.
+        </p>
+      </div>
+    </div>
+
+    <!-- Service Box 2 -->
+    <div class="py-10 px-8 max-w-[500px] mx-auto bg-[var(--main-color)] rounded-[3rem] border-[5px] border-transparent shadow-[0_0_8px_var(--main-color)] hover:shadow-[0_0_20px_var(--main-color),_0_0_30px_var(--main-color)] hover:bg-[rgb(99,110,94)] transition duration-500 ease-in-out hover:scale-105 cursor-pointer flex justify-center items-center text-center">
+      <div>
+        <i class="bx bx-line-chart text-[6rem] text-[var(--bg-color)]"></i>
+        <h4 class="text-4xl font-extrabold text-[var(--bg-color)] mt-8 mb-6">Data Science</h4>
+        <p class="text-base font-semibold text-[var(--bg-color)] leading-relaxed">
+          I assist in designing and building foundational data science solutions, including developing basic predictive models, performing hypothesis testing, and implementing statistical analyses. These services help organizations better understand patterns in their data and support early-stage adoption of data science capabilities.
+        </p>
+      </div>
+    </div>
+
+    <!-- Service Box 3 -->
+    <div class="py-10 px-8 max-w-[500px] mx-auto bg-[var(--main-color)] rounded-[3rem] border-[5px] border-transparent shadow-[0_0_8px_var(--main-color)] hover:shadow-[0_0_20px_var(--main-color),_0_0_30px_var(--main-color)] hover:bg-[rgb(99,110,94)] transition duration-500 ease-in-out hover:scale-105 cursor-pointer flex justify-center items-center text-center">
+      <div>
+        <i class="bx bx-plug text-[6rem] text-[var(--bg-color)]"></i>
+        <h4 class="text-4xl font-extrabold text-[var(--bg-color)] mt-8 mb-6">API Integration & AI/ML</h4>
+        <p class="text-base font-semibold text-[var(--bg-color)] leading-relaxed">
+          I specialize in integrating and managing external APIs to enhance application capabilities and connectivity. Additionally, I support the integration of AI and machine learning models into business processes or applications, enabling intelligent features and smarter decision-making support tailored to evolving business needs.
+        </p>
+      </div>
+    </div>
+
+    <!-- Service Box 4 -->
+    <div class="py-10 px-8 max-w-[500px] mx-auto bg-[var(--main-color)] rounded-[3rem] border-[5px] border-transparent shadow-[0_0_8px_var(--main-color)] hover:shadow-[0_0_20px_var(--main-color),_0_0_30px_var(--main-color)] hover:bg-[rgb(99,110,94)] transition duration-500 ease-in-out hover:scale-105 cursor-pointer flex justify-center items-center text-center">
+      <div>
+        <i class="bx bx-cog text-[6rem] text-[var(--bg-color)]"></i>
+        <h4 class="text-4xl font-extrabold text-[var(--bg-color)] mt-8 mb-6">Automation & E2E</h4>
+        <p class="text-base font-semibold text-[var(--bg-color)] leading-relaxed">
+          I provide automation services to streamline repetitive or time-consuming processes, improving operational efficiency. From automating data pipelines to integrating end-to-end workflows, I help organizations save time and focus more on strategic tasks by minimizing manual interventions.
+        </p>
+      </div>
+    </div>
+
+    <!-- Service Box 5 -->
+    <div class="py-10 px-8 max-w-[500px] mx-auto bg-[var(--main-color)] rounded-[3rem] border-[5px] border-transparent shadow-[0_0_8px_var(--main-color)] hover:shadow-[0_0_20px_var(--main-color),_0_0_30px_var(--main-color)] hover:bg-[rgb(99,110,94)] transition duration-500 ease-in-out hover:scale-105 cursor-pointer flex justify-center items-center text-center">
+      <div>
+        <i class="bx bx-code-alt text-[6rem] text-[var(--bg-color)]"></i>
+        <h4 class="text-4xl font-extrabold text-[var(--bg-color)] mt-8 mb-6">Web Development</h4>
+        <p class="text-base font-semibold text-[var(--bg-color)] leading-relaxed">
+          I design and develop responsive, modern, and user-friendly websites tailored to client goals and brand identity. From crafting intuitive user interfaces to implementing robust frontend functionality, I focus on delivering seamless digital experiences across all devices. By combining clean design principles with solid technical execution, I help create engaging web solutions that drive results and strengthen online presence.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ✅ Minimal Footer / Ending Section -->
+<footer class="bg-[var(--second-bg-color)] backdrop-blur-md text-[var(--text-color)] py-6 mt-20">
+  <div class="flex flex-col items-center gap-4">
+    <!-- Social Icons -->
+    <div class="flex gap-6">
+      <a href="https://www.linkedin.com/in/irika-ishani-828267307/" target="_blank"
+         class="text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition active:scale-110 focus:scale-110">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://github.com/irikaishani" target="_blank"
+         class="text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition active:scale-110 focus:scale-110">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="mailto:ishaniirika5@gmail.com"
+         class="text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition active:scale-110 focus:scale-110">
+        <i class='bx bxl-gmail'></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-sm text-[rgba(236,223,204,0.6)] mt-2">
+      © 2025 Irika Ishani. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+  <!-- ✅ JS for Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

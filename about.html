@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Irika Ishani</title>
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="output.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: rgb(24, 28, 20);
+      --second-bg-color: rgb(90 92 78 / 26%);
+      --text-color: rgb(236, 223, 204);
+      --main-color: rgb(132 143 128);
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .scroll-down-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid var(--main-color);
+      border-radius: 9999px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--main-color);
+      font-size: 2.5rem;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .scroll-down-btn:hover {
+      background-color: var(--main-color);
+      color: var(--bg-color);
+      transform: scale(1.1) translateY(3px);
+      box-shadow: 0 0 15px var(--main-color);
+    }
+  </style>
+</head>
+
+<body class="text-[var(--text-color)]">
+
+  <!-- ✅ Header -->
+  <header class="fixed top-0 left-0 w-full px-8 py-8 bg-[var(--second-bg-color)] backdrop-blur-md z-50 flex justify-between items-center">
+     <a href="index.html" class="text-4xl bottom-0.5 font-extrabold text-[var(--text-color)] transition-transform duration-300 hover:scale-110 mt-2 md:mt-4 ml-2 md:ml-6">
+      Irika <span class="bg-clip-text text-transparent bg-gradient-to-r from-[rgba(132,143,128,0.46)] to-[var(--text-color)]">Ishani</span>
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-3xl text-[var(--main-color)] focus:outline-none">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+
+    <!-- ✅ Desktop Nav -->
+    <nav id="nav-menu" class="hidden md:flex items-center gap-10">
+      <a href="index.html" class="text-xl font-bold text-[var(--text-color)] hover:text-[var(--main-color)] border-b-2 border-transparent hover:border-[var(--main-color)]">Home</a>
+      <a href="about.html" class="text-xl font-bold text-[var(--main-color)] border-b-2 border-[var(--main-color)]">About</a>
+      <a href="projects.html" class="text-xl font-bold text-[var(--text-color)] hover:text-[var(--main-color)] border-b-2 border-transparent hover:border-[var(--main-color)]">Projects</a>
+      <a href="services.html" class="text-xl font-bold text-[var(--text-color)] hover:text-[var(--main-color)] border-b-2 border-transparent hover:border-[var(--main-color)]">Services</a>
+    </nav>
+
+    <a href="contact.html" class="hidden md:inline-block bg-gradient-to-r from-[rgba(132,143,128,0.46)] to-[var(--text-color)] text-white text-lg px-6 py-2 rounded-full transition-transform duration-300 hover:scale-110">Contact Me</a>
+  </header>
+
+  <!-- ✅ Mobile Menu -->
+   <div id="mobile-menu" class="hidden fixed top-20 left-0 w-full z-40 flex-col space-y-6 px-8 py-8 bg-[var(--second-bg-color)] backdrop-blur-md md:hidden">
+
+    <a href="index.html" class="block text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition">Home</a>
+    <a href="about.html" class="block text-2xl text-[var(--main-color)] font-bold underline underline-offset-4">About</a>
+    <a href="projects.html" class="block text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition">Projects</a>
+    <a href="services.html" class="block text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition">Services</a>
+    <a href="contact.html" class="block text-xl bg-gradient-to-r from-[rgba(132,143,128,0.46)] to-[var(--text-color)] text-white px-5 py-2 rounded-full transition hover:scale-105">Contact Me</a>
+  </div>
+
+  <!-- ✅ About Section -->
+  <section id="about" class="relative w-full min-h-screen pt-48 pb-32 px-6 flex flex-col items-center bg-[var(--bg-color)] overflow-x-hidden">
+    <div class="absolute inset-0 bg-[rgba(24,28,20,0.7)] z-0"></div>
+
+    <!-- About Me -->
+    <div class="relative z-10 max-w-4xl w-full bg-[rgba(24,28,20,0.6)] rounded-lg shadow-[0_0_20px_var(--main-color)] hover:shadow-[0_0_40px_var(--main-color)] p-10 mb-20 text-center transition duration-300">
+      <h2 class="text-6xl sm:text-7xl font-semibold mb-6">
+        About <span class="bg-clip-text text-transparent bg-gradient-to-r from-[var(--main-color)] to-[var(--text-color)]">Me</span>
+      </h2>
+      <p class="text-2xl leading-relaxed">I’m a Python developer with a strong interest in backend engineering and data analysis, focused on turning complex datasets into clear, actionable insights. I enjoy simplifying messy data, identifying meaningful patterns, and transforming them into solutions that support confident, informed decision-making.
+        <br><br>
+       I am currently deepening my skills in data science while exploring modern AI tools—LLMs, intelligent agents, and automation frameworks—to make analysis faster, more accurate, and more impactful. My goal is to combine solid backend systems with smart, data-driven intelligence to build solutions that are efficient, reliable, and genuinely useful.
+      </p>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="relative z-10 w-full max-w-6xl text-center opacity-0 translate-y-10 transition-all duration-1000 skills-table-section">
+      <h2 class="text-5xl mb-6">
+        My <span class="bg-clip-text text-transparent bg-gradient-to-r from-[var(--main-color)] to-[var(--text-color)]">Skills</span>
+      </h2>
+      <div class="overflow-auto">
+        <table class="w-full table-auto border-collapse text-left">
+          <thead>
+            <tr class="text-[var(--main-color)] bg-[rgba(255,255,255,0.1)] text-2xl">
+              <th class="p-4">Category</th>
+              <th class="p-4">Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+  <tr class="hover:bg-[rgba(255,255,255,0.1)]">
+    <td class="p-4 text-xl">Languages & Frameworks</td>
+    <td class="p-4 text-xl">Python, SQL, JavaScript, C, HTML, Tailwind CSS</td>
+  </tr>
+
+  <tr class="hover:bg-[rgba(255,255,255,0.1)]">
+    <td class="p-4 text-xl">Backend & APIs</td>
+    <td class="p-4 text-xl">FastAPI, Pydantic, REST APIs, Authentication (JWT, Firebase), Routing & Middleware</td>
+  </tr>
+
+  <tr class="hover:bg-[rgba(255,255,255,0.1)]">
+    <td class="p-4 text-xl">Data Analysis</td>
+    <td class="p-4 text-xl">Pandas, NumPy, Exploratory Data Analysis, Data Cleaning, Visualization, SQL Queries, Power BI</td>
+  </tr>
+
+  <tr class="hover:bg-[rgba(255,255,255,0.1)]">
+    <td class="p-4 text-xl">AI & LLM Tools</td>
+    <td class="p-4 text-xl">GenAI, LLM Integration, LangChain (basics), AI Agents, Prompt Engineering</td>
+  </tr>
+
+  <tr class="hover:bg-[rgba(255,255,255,0.1)]">
+    <td class="p-4 text-xl">Tools & Platforms</td>
+    <td class="p-4 text-xl">Git/GitHub, Firebase Auth, VS Code, Jupyter, Streamlit, Recharts, Vite + React</td>
+  </tr>
+</tbody>
+
+        </table>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="relative z-10 max-w-3xl text-center mt-20 opacity-0 translate-y-10 transition-all duration-1000 education-section">
+     <h2 class="text-5xl mb-6">
+  My <span class="bg-clip-text text-transparent bg-gradient-to-r from-[var(--main-color)] to-[var(--text-color)] underline underline-offset-4">Education</span>
+</h2>
+
+      <p class="text-2xl leading-relaxed">
+        <strong class="text-[var(--main-color)]">B.Tech in Electrical Engineering</strong> (SGPA: 8.29)<br>
+        School of Engineering & Technology, Central University of Haryana<br>
+        August 2022 – July 2026
+      </p>
+    </div>
+  </section>
+
+  <!-- Scroll Button -->
+  <a class="scroll-down-btn">
+    <i class='bx bx-down-arrow-alt'></i>
+  </a>
+  <!-- ✅ Minimal Footer / Ending Section -->
+<footer class="bg-[var(--second-bg-color)] backdrop-blur-md text-[var(--text-color)] py-6 mt-20">
+  <div class="flex flex-col items-center gap-4">
+    <!-- Social Icons -->
+    <div class="flex gap-6">
+      <a href="https://www.linkedin.com/in/irika-ishani-828267307/" target="_blank"
+         class="text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition active:scale-110 focus:scale-110">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://github.com/irikaishani" target="_blank"
+         class="text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition active:scale-110 focus:scale-110">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="mailto:ishaniirika5@gmail.com"
+         class="text-2xl text-[var(--text-color)] hover:text-[var(--main-color)] transition active:scale-110 focus:scale-110">
+        <i class='bx bxl-gmail'></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-sm text-[rgba(236,223,204,0.6)] mt-2">
+      © 2025 Irika Ishani. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+  <!-- ✅ JS -->
+  <script>
+    // Mobile nav toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Reveal skills/education on scroll
+    function revealOnScroll() {
+      const skills = document.querySelector('.skills-table-section');
+      const edu = document.querySelector('.education-section');
+      const windowHeight = window.innerHeight;
+      const triggerTop = skills.getBoundingClientRect().top;
+      if (triggerTop < windowHeight - 500) {
+        skills.classList.add('opacity-100', 'translate-y-0');
+        edu.classList.add('opacity-100', 'translate-y-0');
+      }
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // Scroll to skills section
+    document.addEventListener('DOMContentLoaded', () => {
+      const scrollBtn = document.querySelector('.scroll-down-btn');
+      const target = document.getElementById('skills');
+      if (scrollBtn && target) {
+        scrollBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          const offset = -200;
+          const pos = target.getBoundingClientRect().top + window.pageYOffset + offset;
+          window.scrollTo({ top: pos, behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
